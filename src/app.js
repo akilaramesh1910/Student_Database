@@ -3,18 +3,18 @@ const mongoose = require("mongoose");
 require('dotenv').config();
 
 // Import my routes
-const userRoutes = require ("./routes/user.routes");
+const studentRoutes = require ("./routes/student.routes");
 // Connect to my database
 mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }).then(() =>
-    console.log("Connected to the database")
+    console.log("Connected to the database!!!")
 ).catch((e) => {
     console.log("Error connecting to database",e)
 });
 // Start my server
-fastify.register(userRoutes, { prefix : "/api/v1/users" });
+fastify.register(studentRoutes, { prefix : "/api/v1/students" });
 
 const start = async () => {
     try {

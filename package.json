@@ -1,7 +1,6 @@
 {
   "name": "building_an_app",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,5 +13,6 @@
     "fastify": "^4.26.2",
     "mongodb": "^6.5.0",
     "mongoose": "^8.2.1"
-  }
+  },
+  "description": ""
 }
